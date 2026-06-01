@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+body {
+  margin: 0;
+}
+
+nav {
+  background-color: white;
+  padding: 9px 90px;
+  border-bottom: solid 1px black;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+  margin-left: 15px;
+  top: 10px;
+  position: relative;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width 0.3s ease;
+}
+
+a:hover {
+  color: black;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+.links-container {
+  float: right;
+}
+
+.busi-logo,
+.busi-logo h1 {
+  display: inline-block;
+  position: relative;
+  font-size: 30px;
+  color: black;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-weight: 100;
+}
+
+.hero-section h1 {
+  text-align: center;
+  position: relative;
+  top: 260px;
+  font-weight: 100;
+  font-size: 84px;
+  font-family: "Playfair Display", serif;
+  margin: 0;
+}
+
+.hero-section {
+  background-image: url(https://plus.unsplash.com/premium_photo-1700353612860-bd8ab8d71f05?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y291cGxlc3xlbnwwfHwwfHx8MA%3D%3D);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 120vh;
+  background-color: rgb(255 255 255 / 0.1);
+}
+
+.hero-section h4 {
+  text-align: center;
+  position: relative;
+  top: 280px;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  color: rgb(167, 164, 164);
+  font-weight: 300;
+  margin: 0;
+}
