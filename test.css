@@ -13,7 +13,7 @@ nav {
   z-index: 1000;
 }
 
-a {
+.links-container a {
   text-decoration: none;
   color: gray;
   margin-left: 15px;
@@ -25,7 +25,7 @@ a {
   font-weight: 600;
 }
 
-a::after {
+.links-container a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -36,11 +36,11 @@ a::after {
   transition: width 0.3s ease;
 }
 
-a:hover {
+.links-container a:hover {
   color: black;
 }
 
-a:hover::after {
+.links-container a:hover::after {
   width: 100%;
 }
 
@@ -60,31 +60,76 @@ a:hover::after {
 }
 
 .hero-section h1 {
-  text-align: center;
   position: relative;
   top: 260px;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 84px;
   font-family: "Playfair Display", serif;
   margin: 0;
+  line-height: 92px;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
 }
 
 .hero-section {
-  background-image: url(https://plus.unsplash.com/premium_photo-1700353612860-bd8ab8d71f05?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y291cGxlc3xlbnwwfHwwfHx8MA%3D%3D);
+  background-image: url(images/ssjaa.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 120vh;
   background-color: rgb(255 255 255 / 0.1);
+  text-align: center;
 }
 
 .hero-section h4 {
-  text-align: center;
   position: relative;
   top: 280px;
   font-size: 16px;
   font-family: "Inter", sans-serif;
-  color: rgb(167, 164, 164);
-  font-weight: 300;
-  margin: 0;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  color: #5d5f5f;
+  margin-top: 0;
+}
+
+.view-story-button {
+  display: block;
+  width: fit-content; /* or a fixed width like 220px */
+  padding: 16px 40px;
+  border: solid 1px black;
+  text-decoration: none;
+  color: black;
+  font-family: "Inter", sans-serif;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  margin: 320px auto 0;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.view-story-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.gallery-section {
+  padding: 160px 80px;
+  margin: 0 43px;
+}
+
+.gallery-section p {
+  padding-bottom: 16px;
+  border-bottom: solid 1px black;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.grid-gallery-section {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
 }
